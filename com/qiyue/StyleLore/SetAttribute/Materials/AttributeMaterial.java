@@ -1,5 +1,5 @@
 package com.qiyue.StyleLore.SetAttribute.Materials;
-
+@SuppressWarnings("all")
 public enum AttributeMaterial {
 	
 	Damage("Damage",1),

@@ -5,7 +5,7 @@ import java.io.File;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
-
+@SuppressWarnings("all")
 public class Message {
 
 	
@@ -15,6 +15,7 @@ public class Message {
 		Main.message = new File(Main.instance.getDataFolder(),"message.yml").exists() ? YamlConfiguration.loadConfiguration( new File(Main.instance.getDataFolder(),"message.yml")) : new YamlConfiguration();
 	}
 	
+
 	public static void damage(Entity damger , Entity entity , double damage){
 		if(!(damger instanceof Player) && !(entity instanceof Player)){
 			return;
